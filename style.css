@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  font-size: 14px;
+}
+body{
+  background-color:  hsl(0, 0%, 8%);
+  color:  hsl(0, 0%, 100%);
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+main{
+  padding: 2.5em;
+  margin: 5% 38%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  /* height: 600px; */
+  /* width: 400px;  */
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 12%);
+}
+img{
+  border-radius: 50%;
+  height: 80px;
+  margin-bottom: 10px;
+}
+h1,h3{
+  text-align: center;
+  font-weight: 400;
+}
+a,.info{
+ text-align: center;
+  background-color:  hsl(0, 0%, 20%);
+  border: none;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius:8px;
+  font-weight: 600;
+  text-decoration: none;
+  color:  hsl(75, 94%, 57%);
+
+}
+
+a:hover{
+  background-color:  hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%); 
+  
+}
+.attribution{
+  background-color: black;
+  color: white;
+ 
+}
+.by{
+  text-align: center;
+}
+
+/* .info{
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+}
+.info:hover{
+  color: black;
+} */
+
+/*------------------ for laptops -----------------------*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+  main{
+    margin: 5% 33%;
+  }
+  h1,h3,p{
+    text-align: center;
+  }
+  
+}
+
+/* ------------------for tablets -----------------------*/
+@media  (min-width: 767px) and (max-width: 1024px) {
+  main{
+    margin: 5% 30%;
+    padding: 2rem;
+  }
+  h1{
+    /* font-size: 22px; */
+    text-align: center;
+  }
+  h3{
+    /* font-size: 14px; */
+    text-align: center;
+  }
+  p{
+    font-size: 12px;
+    text-align: center;
+    
+  }
+}
+
+/* ----------------------phones-------------------- */
+@media  (min-width: 500px) and (max-width: 766px) {
+  main{
+    margin: 5% 20%;
+    padding: 2rem;
+  }
+  h1{
+    font-size: 22px;
+    text-align: center;
+  }
+  h3{
+    font-size: 14px;
+    text-align: center;
+  }
+  p{
+    font-size: 13px;
+    text-align: center;
+    
+  }
+}
+/* ----------------------small phones-------------------- */
+@media  (min-width: 300px) and (max-width: 499px) {
+  main{
+    margin: 5% 12%;
+    padding: 2rem;
+  }
+  h1{
+    font-size: 22px;
+    text-align: center;
+  }
+  h3{
+    font-size: 14px;
+    text-align: center;
+  }
+  p{
+    font-size: 13px;
+    text-align: center;
+    
+  }
+}
